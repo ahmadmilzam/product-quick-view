@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: color-level($color-purple, -4);
+    background-color: color-level($base-background-color, -4);
   }
 
     &__img{
@@ -18,51 +18,45 @@
       height: auto;
     }
 
-    &__link{
+    &__action{
+      position: absolute;
+      bottom: 0;
+      left: 0;
       display: block;
       height: rem-calc(50);
+      width: 100%;
       padding-left: rem-calc(halve($base-spacing-unit));
       padding-right: rem-calc(halve($base-spacing-unit));
       line-height: rem-calc(50);
-      background-color: $color-white;
+      background-color: rgba($color-black, 0.4);
       text-align: center;
 
+      &,
+      &:hover{
+        color: $base-text-color;
+      }
       @media #{$large-up}{
         display: none;
       }
-    }
 
-    &__quick-view{
-      display: none;
+      &--view{
+        display: none;
 
-      @media #{$large-up}{
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        height: rem-calc(50);
-        width: 100%;
-        padding-left: rem-calc(halve($base-spacing-unit));
-        padding-right: rem-calc(halve($base-spacing-unit));
-        line-height: rem-calc(50);
+        @media #{$large-up}{
+          display: block;
+          top: 100%;
+          bottom: auto;
 
-        background-color: rgba($color-black, 0.4);
-        text-align: center;
+          opacity: 0;
+          visibility: hidden;
 
-        opacity: 0;
-        visibility: hidden;
+          transition: all 0.3s ease-out;
 
-        transition: all 0.3s ease-out;
-
-        &,
-        &:hover{
-          color: $color-white;
-        }
-
-        .item:hover > &{
-          opacity: 1;
-          visibility: visible;
-          transform: translate(0, -100%);
+          .item:hover > &{
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, -100%);
+          }
         }
       }
     }

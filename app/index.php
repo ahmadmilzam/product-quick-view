@@ -31,108 +31,108 @@
       <ul class="block-list block-list--small-1 block-list--medium-3 block-list--large-4">
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="1">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="1">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="2">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="2">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="3">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="3">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="4">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="4">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="5">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="5">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="6">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="6">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="7">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="7">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="8">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="8">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="9">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="9">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="10">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="10">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="11">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="11">
               Quick View
             </a>
           </div>
         </li>
         <li class="block-list__item">
           <div class="item">
-            <img src="assets/img/item-1.jpg" alt="item image" class="item__img">
-            <a href="detail.php" class="item__link">Learn More</a>
-            <a href="#" class="item__quick-view js-quickView" data-id="12">
+            <img src="assets/img/item.jpg" alt="item image" class="item__img">
+            <a href="detail.php" class="item__action">Learn More</a>
+            <a href="#" class="item__action item__action--view js-quickView" data-id="12">
               Quick View
             </a>
           </div>
@@ -144,7 +144,7 @@
 
   <div class="modal" id="js-modal">
     <div class="modal__img">
-      <img src="assets/img/item-1.jpg" alt="Product 1">
+      <img src="assets/img/item.jpg" alt="Product 1">
     </div>
     <div class="modal__body">
       <!-- dynamic content -->
