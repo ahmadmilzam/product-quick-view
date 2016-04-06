@@ -1549,6 +1549,7 @@ Example showing how to change the color/size of the icons:
         display: inline-block;
         float: left;
         text-align: center;
+        width: 100%;
         max-width: 25rem;
         margin-right: 1.5rem;
         z-index: 1001; }

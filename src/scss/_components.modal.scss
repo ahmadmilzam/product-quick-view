@@ -35,6 +35,7 @@ $modal-max-width: rem-calc(900);
       display: inline-block;
       float: left;
       text-align: center;
+      width: 100%;
       max-width: rem-calc(400);
       margin-right: rem-calc($base-spacing-unit);
       z-index: z('modal') + 1;

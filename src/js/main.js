@@ -100,8 +100,8 @@
     });
 
     function resizeQuickView() {
-      var quickViewLeft = ($(window).width() - $modal.width())/2,
-          quickViewTop = ($(window).height() - $modal.height())/2;
+      var quickViewLeft = ($(window).width() - $('#js-modal').width())/2,
+          quickViewTop = ($(window).height() - $('#js-modal').height())/2;
       $modal.css({
           "top": quickViewTop,
           "left": quickViewLeft,
@@ -158,14 +158,40 @@
           $modal.removeClass('animate-zoom').velocity({
             "top": topSelected,
             "left": leftSelected,
-            "width": widthSelected,
-            "width": heightSelected
+            "width": widthSelected
           }, 500, 'ease', function(){
             $modal.removeClass('is-visible');
             item.removeClass('is-empty');
           });
         });
       }
+    }
+
+    function closeQuickView() {
+      var close = $('.cd-close'),
+          item = $('.is-empty');
+
+      if( !$modal.hasClass('velocity-animating') && $modal.hasClass('content-added')) {
+        animateQuickView(item, 'close');
+      } else {
+        closeNoAnimation(item);
+      }
+    }
+
+    function closeNoAnimation(item) {
+      var topSelected = item.offset().top - $(window).scrollTop(),
+          leftSelected = item.offset().left,
+          widthSelected = item.width();
+
+      //close the quick view reverting the animation
+      $body.removeClass('is-visible');
+      item.removeClass('is-empty');
+
+      $modal.velocity("stop").removeClass('content-added animate-zoom is-visible').css({
+        "top": topSelected,
+        "left": leftSelected,
+        "width": widthSelected
+      });
     }
 
     function populateTemplate(data){
@@ -217,33 +243,6 @@
       template += '</div>';
 
       return template;
-    }
-
-    function closeQuickView() {
-      var close = $('.cd-close'),
-          item = $('.is-empty');
-
-      if( !$modal.hasClass('velocity-animating') && $modal.hasClass('content-added')) {
-        animateQuickView(item, 'close');
-      } else {
-        closeNoAnimation(item);
-      }
-    }
-
-    function closeNoAnimation(item) {
-      var topSelected = item.offset().top - $(window).scrollTop(),
-          leftSelected = item.offset().left,
-          widthSelected = item.width();
-
-      //close the quick view reverting the animation
-      $body.removeClass('is-visible');
-      item.removeClass('is-empty');
-
-      $modal.velocity("stop").removeClass('content-added animate-zoom is-visible').css({
-        "top": topSelected,
-        "left": leftSelected,
-        "width": widthSelected
-      });
     }
   });
 
