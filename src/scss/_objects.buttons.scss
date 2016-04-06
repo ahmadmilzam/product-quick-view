@@ -1,0 +1,7 @@
+.btn--gray{
+  @include buttons-style($color-gray);
+}
+
+.btn--radius{
+  border-radius: 4px;
+}

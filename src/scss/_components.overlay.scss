@@ -1,0 +1,25 @@
+.overlay{
+  position: relative;
+
+  &:after{
+    /* dark overlay layer*/
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-purple, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s 0s, visibility 0s .3s;
+  }
+
+  @media #{$large-up}{
+    &.is-visible:after{
+      visibility: visible;
+      opacity: 1;
+      transition: opacity .3s 0s, visibility 0s 0s;
+    }
+  }
+}
