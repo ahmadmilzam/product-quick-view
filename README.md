@@ -1,5 +1,5 @@
 ======
-Gulp Starter For Dummy
+Product quick view effect with AJAX
 ======
 
 # Installation
