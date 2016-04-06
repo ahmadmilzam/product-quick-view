@@ -54,13 +54,13 @@
     //close the quick view panel
     $body.on('click', function(event){
       if( $(event.target).is('.modal__close') || $(event.target).is('body.overlay')) {
-        closeQuickView( IMG_WIDTH, MAX_QUICK_WIDTH);
+        closeQuickView();
       }
     });
     $(document).keyup(function(event){
       //check if user has pressed 'Esc'
         if(event.which=='27'){
-        closeQuickView( IMG_WIDTH, MAX_QUICK_WIDTH);
+        closeQuickView();
       }
     });
 
