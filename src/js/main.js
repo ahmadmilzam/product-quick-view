@@ -133,7 +133,7 @@
             'width': widthSelected
         }).velocity({
           //animate the quick view: animate its width and center it in the viewport
-          //during this animation, only the slider image is visible
+          //during this animation, only the image is visible
             'top': finalTop+ 'px',
             'left': finalLeft+'px',
             'width': IMG_WIDTH+'px',
