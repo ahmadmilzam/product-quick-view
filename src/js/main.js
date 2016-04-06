@@ -46,9 +46,6 @@
 
       return false;
 
-      //update the visible slider image in the quick view panel
-      //you don't need to implement/use the updateQuickView if retrieving the quick view data with ajax
-      // updateQuickView(slectedImageUrl);
     });
 
     //close the quick view panel
