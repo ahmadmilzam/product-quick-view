@@ -56,9 +56,10 @@ $modal-max-width: rem-calc(900);
     }
 
       &__heading{
+        line-height: 1.1;
         color: color-level($color-soft-blue, -6);
         margin-top: 0;
-        margin-bottom: rem-calc(halve($base-spacing-unit));
+        margin-bottom: rem-calc(quarter($base-spacing-unit));
       }
 
     &__close{

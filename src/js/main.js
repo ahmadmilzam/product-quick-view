@@ -71,12 +71,10 @@
     /**
      * increment decrement stock item
      **/
-    var $quantityInput = $('.js-quantityInput'),
-        $quantityBtn = $('.js-quantityBtn');
-
-    $quantityBtn.on("click",function(){
+    $(document).on("click", '.js-quantityBtn',function(){
 
       var $this = $(this),
+          $quantityInput = $this.closest('.input-group').find('.js-quantityInput'),
           type = $this.data('type'),
           oldVal = $quantityInput.val(),
           limitVal = parseInt($quantityInput.data('limit'));
@@ -175,22 +173,36 @@
 
       template += '<div class="slide-in">';
         template += '<h2 class="modal__heading">'+data.product.title+'</h2>';
+        template += '<div class="mb">';
+          template += '<small class="text-disabled">';
+            template += 'By <a href="'+data.seller.url+'">'+data.seller.name+'</a>, ';
+            template += 'Last login: '+data.seller.lastLogin;
+          template += '</small>';
+        template += '</div>';
         template += '<div class="h3"><strong>'+data.product.price+'</strong></div>';
         template += '<div>Availability '+data.product.stock+' stock</div>';
       template += '</div>';
 
       template += '<div class="slide-in">';
         template += '<p>'+data.product.description+'</p>';
-        template += '<p>';
-          template += 'Seller: <a href="'+data.seller.url+'">'+data.seller.name+'</a>';
-          template += '<br>';
-          template += '<small>Join: '+data.seller.joinDate+'</small>';
-          template += '<br>';
-          template += '<small>Last login: '+data.seller.lastLogin+'</small>';
-        template += '</p>';
       template += '</div>';
 
       template += '<div class="slide-in">';
+        template += '<div class="input-group mb">';
+          template += '<div class="input-group__item">';
+            template += '<button type="submit" class="btn btn--gray input-group__prefix js-quantityBtn" data-type="sub">';
+              template += '<svg class="icon icon--minus"><use xlink:href="#icon--minus"></use></svg>';
+            template += '</button>';
+          template += '</div>';
+          template += '<div class="input-group__item input-group__item--fill">';
+            template += '<input type="text" name="qty" id="qty" class="input input-group__input input-group__input--both js-quantityInput" value="1" data-limit="'+data.product.stock+'">';
+          template += '</div>';
+          template += '<div class="input-group__item">';
+            template += '<button type="submit" class="btn btn--gray input-group__postfix js-quantityBtn" data-type="add">';
+              template += '<svg class="icon icon--plus"><use xlink:href="#icon--plus"></use></svg>';
+            template += '</button>';
+          template += '</div>';
+        template += '</div>';
         template += '<ul class="list-inline list-inline--middle">';
           template += '<li class="list-inline__item">';
             template += '<button class="btn btn--small">';
@@ -203,7 +215,6 @@
           template += '</li>';
         template += '</ul>';
       template += '</div>';
-
 
       return template;
     }

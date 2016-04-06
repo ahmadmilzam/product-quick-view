@@ -36,7 +36,7 @@ for ($i=1; $i <= $total; $i++) {
     'product' => array(
       'id' => $i,
       'title' => 'Product '.$i,
-      'price' => 'Rp 1.000.000',
+      'price' => 'IDR 1.000.000',
       'description' => 'Lorem ipsum dolor sit amet. Duis voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       'stock' => rand(1,20),
       'url' => '#product-page'
