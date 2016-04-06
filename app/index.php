@@ -18,10 +18,11 @@
 <?php require('partials/html_head.php'); ?>
 
   <!-- Add your site or app content here -->
-  <div class="grid pv">
+  <div class="grid pv+">
     <div class="grid__item small-1">
       <h1 class="text-center text-normal">Product Quick View</h1>
     </div>
+  </div>
 
   <div class="grid">
     <div class="grid__item small-1">
